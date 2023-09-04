@@ -1,4 +1,4 @@
-import dash
+import os
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from pages import home, cv, contact, car_sharing
@@ -36,4 +36,4 @@ def display_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True, port=int(os.environ.get('PORT', 8050)))
