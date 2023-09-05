@@ -9,7 +9,7 @@ layout = html.Div([
     html.A(html.Button("Read more"), href="/projects/car_sharing"),
     html.Hr(),   
 
-    html.H4("Wheat price prediction",  className="header-text-color", style={'margin-top': '1cm'}),
+    html.H4("Wheat Price Forecasting",  className="header-text-color", style={'margin-top': '1cm'}),
     html.P("The goal of this project is to use machine learning to predict wheat prices based on historical data."),
     html.P("Tools used : Python, Git, Dash, Heroku"),
     html.P("Category : Forecast, Time series, Data analysis"),
