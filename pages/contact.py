@@ -6,7 +6,7 @@ layout = html.Div([
         html.Img(src="assets/email.png", style={'max-width': '10%', 'margin-top': '1cm'}),
     ], style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
 
-    html.P("Feel free to contact me for any question", style={'margin-top': '1cm'}),
+    html.P("Feel free to contact me with any questions", style={'margin-top': '1cm'}),
 
     html.H5("LinkedIn", style={'margin-top': '1cm'}),
     html.A("LinkedIn Profile", href="https://www.linkedin.com/in/mathilde-roblot", target="_blank"),

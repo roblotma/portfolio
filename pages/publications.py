@@ -9,5 +9,5 @@ layout = html.Div([
 
     html.H3(["Presentation"], style={'margin-top': '1.5cm'}, className="header-text-color"),
     html.P("Roblot, M., Boisjoly, G., Francesco, C., & Martin, T. Vehicles on Carsharing Membership in Montreal, Canada. Poster presented at: TRB Annual Meeting; January 2021; Washington, United States"),
-    html.P("Roblot M. Accessibilité à la mobilité partagée: une analyse des modalités d'urbanisme déterminant l'adhésion au service d'autopartage. Poster presented at: RFTM; June 2021; Paris, France"),
+    html.P("Roblot M. Accessibilité à la mobilité partagée: une analyse des modalités d'urbanisme déterminant l'adhésion au service d'autopartage. Poster presented at: RFTM; June 2021; Paris, France", style={'margin-top': '1cm'}),
 ], style={'margin-left': '10cm', 'margin-right': '10cm', 'text-align': 'justify'})

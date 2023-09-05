@@ -21,7 +21,7 @@ layout = html.Div([
     html.Hr(),  
     
     html.H3("Introduction",  className="header-text-color", style={'margin-top': '1cm'}),
-    html.P("The purpose of this project is to use machine learning to forecast the wheat prices based on historical data. Coming from a farming background, I would like to understand the factors influencing the price, as well as using my knowledge to develop an accurate forecast model. The project is going to be an end-to-end data pipelines, from data extraction to model deployment to website to display the results."),
+    html.P("The purpose of this project is to use machine learning to forecast wheat prices based on historical data. Coming from a farming background, I aim to comprehend the factors influencing prices while employing my knowledge to develop an accurate forecasting model. The project will encompass end-to-end data pipelines, from data extraction to model deployment, and eventually, a website for displaying the results. These results will be accessible once the project is completed, along with the application and the source code."),
     html.Img(src=f'/assets/{image_data[0]["filename"]}', style={'max-width': '100%'}),
     html.P(children=image_data[0]["caption"], style={'text-align': 'center'}),
 
@@ -31,10 +31,10 @@ layout = html.Div([
     html.H5("Data preprocessing", style={'margin-top': '1cm'}),
 
     html.H5("Univariate analysis", style={'margin-top': '1cm'}),
-    html.P("First an univariate analysis of the price of wheat will be held. It allows to understand the trend of the price."),
+    html.P("A univariate analysis of wheat prices will be conducted. This analysis will enable us to comprehend the price trends."),
 
     html.H5("Multivariate analysis", style={'margin-top': '1cm'}),
-    html.P("The price of wheat is influencing by multiple time series variables. Thus, a multivariate time series will be used (for example Long Short-term Memory (LSTM) networks, a special type of Recurrent Neural Networks."),
+    html.P("The price of wheat is influenced by multiple time series variables. You can observe these different variables in the first set of charts or pictures."),
 
     html.H5("Develop the model", style={'margin-top': '1cm'}),
      html.P("A multivariate time series will be used (for example Long Short-term Memory (LSTM) networks, a special type of Recurrent Neural Networks."),
