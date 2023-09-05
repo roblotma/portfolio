@@ -26,6 +26,10 @@ layout = html.Div([
     html.H4("Kaggle Competition",  className="header-text-color", style={'margin-top': '1cm'}),
     html.A("House prices using XGBoost", href="https://www.kaggle.com/code/roblotmathilde/house-prices-using-xgboost/notebook", target="_blank"),
 
+    html.Hr(),  
+    html.H4("GitHub",  className="header-text-color", style={'margin-top': '1cm'}),
+    html.A(html.Button("Access to my GitHub"), href="https://github.com/roblotma"),
+
 
     
-], style={'margin-left': '10cm', 'margin-right': '10cm', 'text-align': 'justify'})
+], style={'margin-left': '10cm', 'margin-right': '10cm', 'text-align': 'justify', 'margin-bottom': '1.5cm'})
