@@ -1,7 +1,9 @@
 import os
+import dash_auth
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
-from pages import home, cv, contact, car_sharing
+from pages import home, cv, contact, portfolio, publications
+from pages.projects import car_sharing, credit_card, wheat_price
 from dash.dependencies import Input, Output
 
 from index import navbarportfolio
@@ -22,17 +24,23 @@ app.layout = html.Div([
               [Input('url', 'pathname')])
 
 
+
+def get_layout(pathname):
+    layout_mapping = {
+        '/home': home.layout,
+        '/cv': cv.layout,
+        '/publications': publications.layout,
+        '/contact': contact.layout,
+        '/projects': portfolio.layout,
+        '/projects/car_sharing': car_sharing.layout,
+        '/projects/credit_card': credit_card.layout,
+        '/projects/wheat_price': wheat_price.layout
+    }
+    return layout_mapping.get(pathname, home.layout)
+
+
 def display_page(pathname):
-    if pathname == '/home':
-        return home.layout
-    if pathname == '/cv':
-        return cv.layout
-    if pathname == '/contact':
-        return contact.layout
-    if pathname == '/project1':
-        return car_sharing.layout
-    else:
-        return home.layout
+    return get_layout(pathname)
 
 
 if __name__ == '__main__':
